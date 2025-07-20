@@ -1,0 +1,243 @@
+<html>
+	<style>
+		body {
+			padding: 2px;
+			width: 100vw;
+			box-sizing: border-box;
+			font-family: monospace;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #F06C9B;
+			color: #FAF9F9;
+			font-size: 1rem;
+		}
+
+		body > div {
+			margin: 2rem 0;
+		}
+
+		li {
+			padding: 2px 0;
+		}
+
+		a {
+			text-decoration: none;
+			padding: 8px;
+			color: #FFD6BA;
+		}
+		a:hover {
+			color: #A66481;
+		}
+
+		.welcome {
+			border: 4px solid white;
+			border-color: #FFD6BA;
+			border-radius: 4px;
+			padding: 6px 12px;
+			margin: 1rem;
+			font-size: 2rem;
+			font-family: monaco, monospace;
+			text-align: center;
+			animation: blink 1s infinite;
+		}
+
+		.welcome:hover {
+			cursor: pointer;
+			color: #006E90;
+			border-color: #006E90;
+			transition-durating: 0.5s;
+		}
+
+		.header-images {
+			width: 90vw;
+			display: flex;
+			justify-content: center;
+		}
+
+		.header-images img {
+		  max-height: 100px;
+		  height: auto;
+		  width: auto;
+		  object-fit: contain;
+		  margin: 0 0.5rem;
+		}
+
+		.me-img {
+			width: 100px;
+		}
+
+		.section {
+			border: 3px dashed white;
+			border-radius: 4px;
+			padding: 6px 12px;
+			width: 80vw;
+			max-width: 50rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: transform 0.3s ease;
+		}
+
+		.section > h3 {
+			margin: 0 2px 0 2px;
+		}
+
+		.section > ul {
+			flex: 2;
+		}
+
+		.section-1:hover {
+			animation: none;
+		  transform: scale(1.2) skewY(0);
+		}
+		.section-2:hover {
+			animation: none;
+		  transform: scale(1.2) skewY(0);
+		}
+		.section-3:hover {
+			animation: none;
+		  transform: scale(1.2) skewY(0);
+		}
+
+		.section-1 {
+			background-color: #41BBD9;
+			transform: skewY(5deg);
+			animation: wiggle-5deg 1s infinite;
+		}
+
+		.section-2 {
+			background-color: #99C24D;
+			transform: skewY(-2deg);
+			animation: wiggle-2deg 1s infinite;
+		}
+
+		.section-3 {
+			background-color: #F18F01;
+			transform: skewY(3deg);
+			animation: wiggle-3deg 1s infinite;
+		}
+
+		.section-4 {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.section-4 img {
+		  height: auto;
+		  width: auto;
+			object-fit: contain;
+			width: 70vw;
+			max-width: 50rem;
+		}
+		.section-4 img:hover {
+			width: 100vw;
+			max-width: 100vw;
+		}
+
+		.section-5 {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+		.section-5 img {
+			margin: 3px 4px;
+		}
+
+		/* KEYFRAMES  */
+		@keyframes blink {
+			0% {
+				color: #FAF9F9;
+				border-color: #FAF9F9;
+			}
+			50% {
+				color: #F06C9B;
+				border-color: rgba(0, 0, 0, 0);
+			}
+			100%{
+				color: #FAF9F9;
+				border-color: #FAF9F9;
+			}
+		}
+
+		@keyframes wiggle-5deg {
+			0%, 100% {
+				transform: skewY(5deg);
+			}
+			50% {
+				transform: skewY(-5deg);
+			}
+		}
+
+		@keyframes wiggle-2deg {
+			0%, 100% {
+				transform: skewY(-2deg);
+			}
+			50% {
+				transform: skewY(2deg);
+			}
+		}
+
+		@keyframes wiggle-3deg {
+			0%, 100% {
+				transform: skewY(3deg);
+			}
+			50% {
+				transform: skewY(-3deg);
+			}
+		}
+		
+	</style>
+	
+	<body>
+		<div class="welcome">Hi, welcome to Jen's page!</div>
+		<div class="header-images">
+			<img class="floaty-hearts" src="https://i.imgur.com/JthybyV.gif"/>
+			<img class="me-img" src="https://i.imgur.com/Hd7vGNe.png"/>
+			<img class="floaty-hearts" src="https://i.imgur.com/JthybyV.gif"/>
+		</div>
+		<div class="section section-1">
+			<h3>Interests</h3>
+			<ul>
+				<li>Knitting</li>
+				<li>Eating</li>
+				<li>Watching TV</li>
+			</ul>
+		</div>
+		<div class="section section-2">
+			<h3>Favorite shows</h3>
+			<ul>
+				<li>Naruto</li>
+				<li>Dandadan</li>
+				<li>Schitt's Creek</li>
+				<li>Rilakkuma and Kaoru</li>
+			</ul>
+			<img src=""/>
+		</div>
+		<div class="section section-3">
+			<h3>Favorite bands</h3>
+			<ul>
+				<li>Glass Animals</li>
+				<li>BTS</li>
+				<li>GOT7</li>
+			</ul>
+		</div>
+		<div class="section section-4">
+			<a target="_blank" href="https://www.ebay.com/itm/114858871957?chn=ps&norover=1&mkevt=1&mkrid=711-117182-37290-0&mkcid=2&mkscid=101&itemid=114858871957&targetid=2295557531510&device=c&mktype=pla&googleloc=9008695&poi=&campaignid=21404249913&mkgroupid=173029508828&rlsatarget=pla-2295557531510&abcId=9450098&merchantid=114155450&gad_source=1&gad_campaignid=21404249913&gbraid=0AAAAAD_QDh-FCC6qiHyTH419GZcdBFUNF&gclid=CjwKCAjwp_LDBhBCEiwAK7Fnkqq4NZiBZu1AqjGX8y_Jldv5a3-MybRZ8Fg9aH0K7GCl9ZKVdCFTtRoCO7QQAvD_BwE">My dream is to own this kirby</a>
+			<img src="https://i.imgur.com/2luJZ4P.png"/>
+		</div>
+		<div class="section section-5">
+			<img src="https://i.imgur.com/e9J51Yz.gif"/>
+			<img src="https://i.imgur.com/RIjWrAN.png"/>
+			<img src="https://i.imgur.com/6Htmrlq.gif"/>
+			<img src="https://i.imgur.com/0brmNGL.png"/>
+			<img src="https://i.imgur.com/DAUDDaU.png"/>
+			<img src="https://i.imgur.com/fcwYwVr.jpeg"/>
+			<img src="https://i.imgur.com/zLbmxSt.png"/>
+			<img src="https://i.imgur.com/9wbv6LJ.gif"/>
+			<img src="https://i.imgur.com/WmbSm1E.png"/>
+		</div>
+		<div>
+			<img src="https://i.imgur.com/tTtgit6.jpeg"/>
+		</div>
+	</body>
+</html>
