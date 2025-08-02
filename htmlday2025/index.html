@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        font-family: monospace;
+        background-color: #184E77;
+        color: #D9ED92;
+        font-size: 1rem;
+        overflow: hidden;
+      }
+
+      h2 {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: #B5E48C;
+        margin: 0;
+      }
+
+      .hello-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hello {
+        color: #34A0A4;
+        animation: floatingWiggle 4s infinite;
+      }
+
+      .hello2 {
+        animation: floatingWiggle2 4s infinite;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .square {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Press Start 2P", system-ui;
+        background-color: #168AAD;
+      }
+
+      .top-left { background-color: #168AAD; }
+      .top-right { background-color: #184E77; }
+      .bottom-left { background-color: #34A0A4; }
+      .bottom-right { background-color: #76C893; }
+
+			.square > div {
+				display: none;
+				border: 5px dashed;
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+			}
+
+			.square:hover > div {
+			  display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+      @keyframes floatingWiggle {
+        0%, 100% { transform: translateY(-10px); }
+        40% { transform: translate(-2px, 0px); }
+      }
+
+      @keyframes floatingWiggle2 {
+        0%, 100% { transform: translateY(-40px); }
+        40% { transform: translate(0px, -25px); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hello-container">
+      <h2 class="hello">Hello</h2>
+      <h2 class="hello2">Hello</h2>
+    </div>
+
+    <div class="grid">
+      <div class="square top-left">
+			  <div>I'm pooping here!</div>
+		  </div>
+      <div class="square top-right">
+			  <div>Hello?</div>
+		  </div>
+      <div class="square bottom-left">
+			  <div>fffart</div>
+		  </div>
+      <div class="square bottom-right">
+			  <div>pewping</div>
+		  </div>
+    </div>
+  </body>
+</html>
